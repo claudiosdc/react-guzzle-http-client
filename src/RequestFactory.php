@@ -172,6 +172,11 @@ class RequestFactory
             $this->convertRedirectOption($options);
         }
 
+        if (isset($options['decode_content'])) {
+            $options['decodeContent'] = (bool)$options['decode_content'];
+            unset($options['decode_content']);
+        }
+
         return $options;
     }
 

@@ -9,9 +9,15 @@
             "homepage": "http://wyrihaximus.net/"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/claudiosdc/reactphp-buzz.git"
+        }
+    ],
     "require": {
         "php": "^5.4|^7.0",
-        "clue/buzz-react": "^2.0 || ^1.4",
+        "clue/buzz-react": "dev-decode-content",
         "clue/http-proxy-react": "^1.2",
         "clue/socks-react": "^1.0.0",
         "guzzlehttp/psr7": "^1.0",
